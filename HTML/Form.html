@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- input type=text , email , password-->
+    
+      <form>
+        <fieldset>
+        <legend>Registration Form</legend>
+       
+        <label for="Firstname">FirstName:</label>
+        <input type="text" name="Firstname" id="Firstname" /><br /><br />
+
+        <label for="Lastname">LastName:</label>
+        <input type="text" name="Lastname" id="Lastname" /> <br /><br />
+
+        <hr />
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email" /> <br /><br />
+
+        <hr />
+        <label for="Password">Password:</label>
+        <input type="Password" name="password" id="Password" /> <br /><br />
+
+        <hr />
+        <label for="DOB">DOB:</label>
+        <input type="date" name="DOB" id="DOB" /> <br /><br />
+        <hr />
+        <!-- Geneder :male and female and other -->
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" value="m" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="f" />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="other" value="f" />
+        <label for="other">Male</label>
+        <hr />
+        <!-- Checkbox -->
+        <label for="program">Favorite Programming Language:</label>
+        <input type="checkbox" name="program" value="C" />
+        <label for="program">C</label>
+        <input type="checkbox" name="program" value="C++" />
+        <label for="program">C++</label>
+        <input type="checkbox" name="program" value="Java" />
+        <label for="program">Java</label>
+        <input type="checkbox" name="program" value="Python" />
+        <label for="program">Python</label><br/><br/>
+
+        <!-- select -->
+         <label for="course">Select Course</label>
+         <select name="course" id="course">
+            <option value="WD">Web Designing</option>
+            <option value="Python">Python with Django</option>
+            <option value="Mern">Mern Stack</option>
+
+</select>
+            <!-- <label for="des"Description></label> -->
+            <!-- <textarea name="" id=""></textarea> <br/><br/> -->
+<hr/>
+            <label for="Age">Age</label>
+            Age:<input type="number" name="age"  min="0" max="110"/>
+            <label for="Color">Color</label>
+           color: <input type="color" name="color">
+<hr/>
+Time: <input type="Time" name="" id="">
+
+          <hr/>
+         Local Date and Time: <input type="Datetime-local" name="" id=""/> 
+         week: <input type="week" name="" id="">
+         Month: <input type="Month" name="" id="">
+
+<hr/>
+<label for="co"> Choose your favorite course:</label>
+<select name="course" id="co" multiple size="2">
+<optgroup label="Frontend">
+  <option>HTML</option>
+  <option>CSS</option>
+  <option>JAVA</option>
+  <option>Tailwind</option>
+  <option>React</option>
+</optgroup>
+<optgroup label="Backened">
+  <option>express JS</option>
+  <option>Next js</option>
+  <option>Python</option>
+  <option>Asp.net</option>
+</optgroup>
+</select>
+
+
+Select Country:<input type="text" name="" id="" List="ListData">
+<datalist id="listData">
+  <option>Nepal</option>
+   <option>India</option>
+    <option>China</option>
+     <option>Bhutan</option>
+      <option>Bangladesh</option>
+</datalist>
+</select>
+<hr/>
+Hidden:<input type="hidden" name="nature" id="nature">
+        <button>Send</button><br /><br />
+      </form>
+    </fieldset>
+    
+  </body>
+</html>
