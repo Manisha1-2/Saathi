@@ -1,0 +1,59 @@
+h3:first-child {
+  background: brown !important;
+}
+
+h3:last-child {
+  background: blue;
+}
+h3:nth-child(2) {
+  background: purple;
+}
+
+h3:nth-child(3) {
+  background: yellow;
+}
+
+h3:nth-child(4) {
+  background: pink;
+}
+
+h3:nth-child(odd) {
+  background: green;
+  color: yellow;
+}
+
+h3:nth-child(even) {
+  background: green;
+  color: red;
+}
+
+a:hover{
+    color:red;
+    font-size:30px;
+}
+
+a:visited{
+    color:green;
+}
+/* unvisited site==>link */
+
+a:link{
+    color:yellow;
+}
+
+div:hover{
+    background:blue;
+    border:1px solid red;
+}
+
+input:required{
+    background:yellow;
+}
+
+input:disabled{
+    background:pink;
+}
+
+input:readonly{
+    background:red;
+}
