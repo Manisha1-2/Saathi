@@ -1,0 +1,18 @@
+.old-price{
+    color:orange;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.new-price{
+    color:grey;
+    text-decoration: line-through;
+}
+
+.actual-price{
+    font-weight: bold;
+}
+
+.product1{
+    
+}

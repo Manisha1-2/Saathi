@@ -1,0 +1,19 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.card{
+    width:400px;
+    border:1px solid lightgrey;
+    padding:20px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.icon{
+    color:blue;
+    padding-right: 10px;
+
+}
