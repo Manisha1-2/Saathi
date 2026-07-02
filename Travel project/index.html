@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="w-full bg-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
+      <!-- Logo -->
+      <div>
+        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/logo-black.png" alt="Logo"
+          class="h-10" />
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="flex items-center gap-8 text-gray-700 font-medium">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tour</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Pages</a></li>
+      </ul>
+
+      <!-- Right Section -->
+      <div class="flex items-center gap-4">
+        <!-- Language -->
+        <select class="border-none outline-none bg-transparent">
+          <option>English</option>
+        </select>
+
+        <!-- Currency -->
+        <select class="border-none outline-none bg-transparent">
+          <option>USD</option>
+          <option>CAD</option>
+          <option>YEN</option>
+        </select>
+
+        <!-- Cart -->
+        <div class="relative flex items-center justify-center w-14 h-14 rounded-full bg-gray-100">
+          <i class="bi bi-cart text-2xl text-gray-700"></i>
+
+          <!-- Badge -->
+          <span
+            class="absolute -top-1 -right-1 flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-xs font-bold">
+            0
+          </span>
+        </div>
+
+        <!-- Sign In -->
+        <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-medium">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero-section -->
+
+  <div class="container mx-auto p-5">
+    <!-- background - image -->
+    <section
+      class="relative bg-[url(https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/home-banner.png)] h-96 rounded-xl">
+      <!-- image text -->
+      <div class="absolute items-center inset-0 text-white p-12 font-sans font-bold">
+        <h1 class="text-4xl">Millions of experiences. One simple search.</h1>
+        <p class="mt-4">Find what makes you happy anytime, anywhere</p>
+      </div>
+
+      <!-- search-box -->
+      <div
+        class="absolute bottom-12 left-1/2 -translate-x-1/2 z-10 w-[80%] bg-white rounded-full shadow-2xl px-3 py-2 flex items-center justify-between">
+        <!-- Location -->
+        <div class="flex items-center gap-5 w-1/2">
+          <i class="bi bi-geo-alt text-4xl text-gray-400"></i>
+
+          <div>
+            <h3 class="font-bold text-xl">Where To?</h3>
+            <p class="text-gray-400 text-lg">
+              Search a place or activity Destination
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-px h-16 bg-gray-200"></div>
+
+        <!-- Date -->
+        <div class="flex items-center gap-5 w-1/3 pl-8">
+          <i class="bi bi-calendar3 text-4xl text-gray-400"></i>
+
+          <div>
+            <h3 class="font-bold text-xl">When?</h3>
+            <p class="text-gray-400 text-lg">Select dates</p>
+          </div>
+        </div>
+
+        <!-- Search Button -->
+        <button
+          class="w-20 h-20 rounded-full bg-teal-500 hover:bg-teal-600 text-white flex items-center justify-center transition">
+          <i class="bi bi-search text-3xl"></i>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- banner section -->
+
+  <section class="container mx-auto py-16 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+      <!-- Item 1 -->
+      <div>
+        <div class="text-7xl text-blue-900 mb-6">
+          <i class="bi bi-globe2"></i>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">
+          Discover the possibilities
+        </h2>
+
+        <p class="text-gray-600 text-xl leading-relaxed">
+          With nearly half a million attractions, hotels & more, you're sure
+          to find joy.
+        </p>
+      </div>
+
+      <!-- Item 2 -->
+      <div>
+        <div class="text-7xl text-blue-900 mb-6">
+          <i class="bi bi-tags"></i>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">Enjoy deals & delights</h2>
+
+        <p class="text-gray-600 text-xl leading-relaxed">
+          Quality activities. Great prices. Plus, earn credits to save more.
+        </p>
+      </div>
+
+      <!-- Item 3 -->
+      <div>
+        <div class="text-7xl text-blue-900 mb-6">
+          <i class="bi bi-umbrella"></i>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">Exploring made easy</h2>
+
+        <p class="text-gray-600 text-xl leading-relaxed">
+          Book last minute, skip lines & get free cancellation for easier
+          exploring.
+        </p>
+      </div>
+
+      <!-- Item 4 -->
+      <div>
+        <div class="text-7xl text-blue-900 mb-6">
+          <i class="bi bi-patch-check"></i>
+        </div>
+
+        <h2 class="text-3xl font-semibold mb-4">Travel you can trust</h2>
+
+        <p class="text-gray-600 text-xl leading-relaxed">
+          Read reviews & get reliable customer support. We're with you at
+          every step.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- destination section -->
+
+  <section>
+    <!-- heading -->
+    <!-- Heading + Arrows -->
+    <div class="flex items-center justify-between mb-10">
+
+      <h2 class="text-5xl font-bold">
+        Top Destination For Your Next Vacation
+      </h2>
+
+      <div class="flex items-center gap-3">
+        <button class="w-14 h-14 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
+          <i class="bi bi-chevron-left text-2xl"></i>
+        </button>
+
+        <button class="w-14 h-14 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center">
+          <i class="bi bi-chevron-right text-2xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-5">
+
+
+      <!-- Card 1 -->
+  <!-- Card 1 -->
+<div class="relative group overflow-hidden rounded-xl w-fit">
+    <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/bali-1.png"
+        alt="Bali"
+        class="rounded-xl transition-transform duration-500 group-hover:scale-105">
+
+    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition duration-500"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+        <h3 class="text-white text-3xl font-bold transition-all duration-500 group-hover:-translate-y-20">
+            Bali
+        </h3>
+
+       <div class="absolute bottom-6 left-6 right-6 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+            <p class="text-white mb-4">
+                Discover the Bali with our special tour
+            </p>
+
+            <a href="#"
+                class="inline-flex items-center gap-2 text-white font-semibold border-b border-white pb-1 hover:gap-4 transition-all">
+                See all Tour
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="relative group overflow-hidden rounded-xl w-fit">
+    <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/bangkok.png"
+        alt="Nha Trang"
+        class="rounded-xl transition-transform duration-500 group-hover:scale-105">
+
+    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition duration-500"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+        <h3 class="text-white text-3xl font-bold transition-all duration-500 group-hover:-translate-y-20">
+            Nha Trang
+        </h3>
+
+        <div class="absolute bottom-6 left-6 right-6 opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+            <p class="text-white mb-4">
+                Discover the Nha Trang with our special tour
+            </p>
+
+            <a href="#"
+                class="inline-flex items-center gap-2 text-white font-semibold border-b border-white pb-1 hover:gap-4 transition-all">
+                See all Tour
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="relative group overflow-hidden rounded-xl w-fit">
+    <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/cancun.png"
+        alt="Cancun"
+        class="rounded-xl transition-transform duration-500 group-hover:scale-105">
+
+    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition duration-500"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+        <h3 class="text-white text-3xl font-bold transition-all duration-500 group-hover:-translate-y-20">
+            Cancun
+        </h3>
+
+        <div class="absolute bottom-6 left-6 right-6 opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+            <p class="text-white mb-4">
+                Discover the Cancun with our special tour
+            </p>
+
+            <a href="#"
+                class="inline-flex items-center gap-2 text-white font-semibold border-b border-white pb-1 hover:gap-4 transition-all">
+                See all Tour
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="relative group overflow-hidden rounded-xl w-fit">
+    <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/Tokyo.png"
+        alt="Tokyo"
+        class="rounded-xl transition-transform duration-500 group-hover:scale-105">
+
+    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/50 transition duration-500"></div>
+
+    <div class="absolute inset-0 flex flex-col justify-end p-6">
+        <h3 class="text-white text-3xl font-bold transition-all duration-500 group-hover:-translate-y-20">
+            Tokyo
+        </h3>
+
+        <div class="absolute bottom-6 left-6 right-6 opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+            <p class="text-white mb-4">
+                Discover the Tokyo with our special tour
+            </p>
+
+            <a href="#"
+                class="inline-flex items-center gap-2 text-white font-semibold border-b border-white pb-1 hover:gap-4 transition-all">
+                See all Tour
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+  <div class=" flex justify-center">
+    <span class="text-green-900 border-1 border-green-900 rounded-full px-8 py-2">See All Destination</span></a>
+  </div>
+
+
+  <section class="container mx-auto px-6 py-16">
+
+    <!-- Heading -->
+    <h2 class="text-5xl font-bold text-gray-900 mb-10">
+      Trip Ideas To Inspire You
+    </h2>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Card 1 -->
+      <div class="relative h-[470px] rounded-[35px] overflow-hidden group">
+
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1200"
+          class="w-full h-full object-cover group-hover:scale-110 duration-500">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-teal-700/60"></div>
+
+        <!-- Content -->
+        <div class="absolute inset-0 flex flex-col justify-center px-14 text-white">
+
+          <h3 class="text-5xl font-bold leading-tight">
+            South Bali (Kuta, Canggu,
+            Uluwatu, Jimbaran)
+          </h3>
+
+          <p class="mt-6 text-2xl leading-relaxed max-w-xl">
+            Travel hassle-free within Bali, visit popular attractions,
+            or do water activities!
+          </p>
+
+          <a href="#"
+            class="mt-12 inline-block bg-white text-teal-600 font-semibold text-xl px-10 py-5 rounded-full w-fit hover:bg-gray-100 transition">
+            See All Activities
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative h-[470px] rounded-[35px] overflow-hidden group">
+
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200"
+          class="w-full h-full object-cover group-hover:scale-110 duration-500">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-indigo-950/65"></div>
+
+        <!-- Content -->
+        <div class="absolute inset-0 flex flex-col justify-center px-14 text-white">
+
+          <h3 class="text-5xl font-bold">
+            Beyond the City
+          </h3>
+
+          <p class="mt-6 text-2xl leading-relaxed max-w-xl">
+            Discover the wonders that lie outside the walls of Da Nang
+            with these exciting tours of surrounding areas.
+          </p>
+
+          <a href="#"
+            class="mt-12 inline-block bg-white text-teal-600 font-semibold text-xl px-10 py-5 rounded-full w-fit hover:bg-gray-100 transition">
+            See All Activities
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- popualar destination -->
+  <section class="container my-5">
+    <div>
+      <h1 class="mb-4">Popular Activities</h1>
+    </div>
+    <!-- card 1 -->
+    <div class="flex justify-between gap-4">
+      <div class="card" style="width: 18rem;">
+        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2024/08/Cover-12.png"
+          class="card-img-top" alt="Tour Image">
+
+        <div class="card-body">
+          <p class="text-muted mb-2">
+            <i class="bi bi-geo-alt"></i> China
+          </p>
+          <h5 class="card-title">
+            Small Group Tour: Mutianyu Great Wall, Summer Palace & Bird Nest
+          </h5>
+
+          <p class="card-text">
+            ⭐ <strong>3.50</strong>
+            <small class="text-muted">(2 reviews)</small>
+          </p>
+
+          <a href="#" class="btn btn-primary">Tour and Cruise</a>
+          <!-- border -->
+          <div class="border-t border-gray-200 mt-5 pt-5">
+            <div class="flex items-center justify-between">
+
+              <!-- Price -->
+              <div>
+                <p class="text-sm text-gray-500">From</p>
+                <h3 class="text-3xl font-bold text-gray-900">
+                  $79<span class="text-xl">.00</span>
+                </h3>
+              </div>
+
+              <!-- Duration -->
+              <div class="flex items-center gap-2 text-gray-600">
+                <i class="bi bi-clock text-lg"></i>
+                <span class="text-base font-medium">4 nights</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2024/08/Cover-1.png"
+          class="card-img-top" alt="Tour Image">
+
+        <div class="card-body">
+          <h5 class="card-title">
+            West Thai Wonders: Phuket, Koh Phi Phi, Krabi & Beyond
+          </h5>
+
+          <p class="card-text">
+            ⭐ <strong>5.00
+            </strong>
+            <small class="text-muted">(2 reviews)</small>
+          </p>
+
+          <a href="#" class="btn btn-primary">Rail Tour</a>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2024/08/Cover-5.png"
+          class="card-img-top" alt="Tour Image">
+
+        <div class="card-body">
+          <h5 class="card-title">
+            Small Group Tour: Mutianyu Great Wall, Summer Palace & Bird Nest
+          </h5>
+
+          <p class="card-text">
+            ⭐ <strong>3.50</strong>
+            <small class="text-muted">(2 reviews)</small>
+          </p>
+
+          <a href="#" class="btn btn-primary">Tour and Cruise</a>
+        </div>
+
+      </div>
+      <!-- card 4 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2024/08/Cover-9.png"
+          class="card-img-top" alt="Tour Image">
+
+        <div class="card-body">
+          <h5 class="card-title">
+            Small Group Tour: Mutianyu Great Wall, Summer Palace & Bird Nest
+          </h5>
+
+          <p class="card-text">
+            ⭐ <strong>3.50</strong>
+            <small class="text-muted">(2 reviews)</small>
+          </p>
+
+          <a href="#" class="btn btn-primary">Tour and Cruise</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- logo -->
+  <footer class="bg-[#1f1f1f] text-gray-300 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Top Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+        <!-- Logo & Contact -->
+        <div>
+          <img src="https://travelwp.physcode.com/main-demo/wp-content/uploads/sites/7/2023/07/logo-white.png"
+            alt="Logo" class="w-52 mb-6">
+
+          <p class="text-white text-xl mb-10">
+            Don't just get there, get there in style.
+          </p>
+
+          <div class="space-y-5 text-lg">
+
+            <div class="flex items-start gap-4">
+              <i class="bi bi-geo-alt text-2xl text-gray-400"></i>
+              <span>1901 Thornridge Cir. Shiloh, Hawaii 81063</span>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <i class="bi bi-telephone text-2xl text-gray-400"></i>
+              <span>(308) 555-0121</span>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <i class="bi bi-envelope text-2xl text-gray-400"></i>
+              <span>hello@travelwp.com</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Destinations -->
+        <div>
+          <h3 class="text-white text-2xl font-semibold mb-8">
+            Top Destination
+          </h3>
+
+          <ul class="space-y-5 text-lg decoration-none">
+            <li><a href="#" class="hover:text-white">Bali</a></li>
+            <li><a href="#" class="hover:text-white">Bangkok</a></li>
+            <li><a href="#" class="hover:text-white">Cancun</a></li>
+            <li><a href="#" class="hover:text-white">Nha Trang</a></li>
+            <li><a href="#" class="hover:text-white">Phuket</a></li>
+            <li><a href="#" class="hover:text-white">Tokyo</a></li>
+            <li><a href="#" class="hover:text-white">More Destinations</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div>
+          <h3 class="text-white text-2xl font-semibold mb-8">
+            Information
+          </h3>
+
+          <ul class="space-y-5 text-lg">
+            <li><a href="#" class="hover:text-white">Help & FAQs</a></li>
+            <li><a href="#" class="hover:text-white">Careers</a></li>
+            <li><a href="#" class="hover:text-white">About us</a></li>
+            <li><a href="#" class="hover:text-white">Contact us</a></li>
+            <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+            <li><a href="#" class="hover:text-white">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Payment -->
+        <div>
+
+          <h3 class="text-white text-2xl font-semibold mb-8">
+            Follow Us
+          </h3>
+
+          <!-- Social Icons -->
+          <div class="flex gap-5 mb-14">
+
+            <a href="#"
+              class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl hover:scale-110 duration-300">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#"
+              class="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-2xl hover:scale-110 duration-300">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+
+            <a href="#"
+              class="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center text-white text-2xl hover:scale-110 duration-300">
+              <i class="bi bi-youtube"></i>
+            </a>
+
+            <a href="#"
+              class="w-14 h-14 rounded-full bg-pink-600 flex items-center justify-center text-white text-2xl hover:scale-110 duration-300">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+          </div>
+
+          <!-- Payment -->
+          <h3 class="text-white text-2xl font-semibold mb-6">
+            Payment channels
+          </h3>
+
+          <div class="grid grid-cols-5 gap-3">
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center text-sm font-bold">CB</div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center text-blue-700 font-bold">
+              VISA
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center font-bold">
+              MC
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center">
+              💳
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center text-blue-600 font-bold">
+              PayPal
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center text-xs">
+              AMEX
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center">
+              Pay
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center">
+              GPay
+            </div>
+
+            <div class="bg-white rounded-md h-12 flex items-center justify-center">
+              支付
+            </div>
+
+            <div class="bg-yellow-300 rounded-md h-12 flex items-center justify-center font-bold">
+              Pay
+            </div>
+
+          </div>
+
+          <!-- Language -->
+          <div class="mt-14 border border-gray-600 rounded-xl px-7 py-6 flex justify-between items-center">
+
+            <div class="flex items-center gap-3 text-white text-xl">
+              <i class="bi bi-globe2 text-3xl text-teal-400"></i>
+              English
+            </div>
+
+            <div class="w-px h-8 bg-gray-600"></div>
+
+            <div class="text-white text-xl">
+              USD
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-16 text-center text-gray-400 text-xl border-t border-gray-700 pt-8">
+        Copyright © 2025 Travel WP. All Rights Reserved.
+      </div>
+
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
