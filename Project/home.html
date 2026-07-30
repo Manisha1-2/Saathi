@@ -1,0 +1,672 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css"/>
+  </head>
+
+<body class="bg-gradient-to-br from-rose-50 via-white to-pink-100 overflow-x-hidden">
+      <!-- Top Bar -->
+      <div class="border-t-1 border-gray-500">
+        <div
+          class="max-w-6xl mx-auto flex justify-between items-center py-3 border-b"
+        >
+          <p class="text-gray-700 text-lg">Welcome To our shop!</p>
+
+          <div class="flex items-center gap-6 text-gray-700">
+            <!-- Search -->
+            <button class="hover:text-black">
+            <i class="bi bi-search text-xl"></i>
+            </button>
+
+            <span>|</span>
+
+            <button class="flex items-center gap-2 hover:text-black">
+              My Account
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+
+            <span>|</span>
+
+            <button class="flex items-center gap-2 hover:text-black">
+              USD
+              <i class="bi bi-chevron-down text-xs"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- top bar ends -->
+
+      <!-- Main Navbar -->
+      <nav class="max-w-6xl mx-auto py-5">
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <h1 class="text-2xl font-bold tracking-wide text-gray-900 font-serif">
+            Bliss <span class="text-pink-500">&</span> Bloom
+          </h1>
+
+          <!-- Menu -->
+          <ul class="hidden md:flex items-center gap-8 font-medium">
+             <li>
+    <a href="home.html" class="hover:text-[#a56f73] transition">HOME</a>
+  </li>
+            <li>
+              <a href="shop.html" class="hover:text-[#a56f73] transition">SHOP</a>
+            </li>
+            <li>
+              <a href="product.html" class="hover:text-[#a56f73] transition">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="blog.html" class="hover:text-[#a56f73] transition">BLOG</a>
+            </li>
+            <li>
+              <a href="about.html" class="hover:text-[#a56f73] transition">ABOUT</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-[#a56f73] transition">CONTACT</a>
+            </li>
+          </ul>
+
+          <!-- Cart -->
+          <div class="flex items-center gap-3">
+            <!-- Cart Icon -->
+            <div class="relative">
+              <i class="bi bi-bag text-3xl text-gray-700"></i>
+
+              <!-- Notification Badge -->
+              <span
+                class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-5 h-5 bg-red-500 text-white rounded-full flex items-center justify-center text-[10px] font-bold"
+              >
+                0
+              </span>
+            </div>
+
+            <!-- Cart Text -->
+            <div class="leading-tight">
+              <p class="text-sm font-semibold text-gray-800">My Cart</p>
+              <p class="text-sm text-gray-600">$0.00</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+    <!-- nav bar ends -->
+
+   <!-- Hero Section -->
+<section class="pb-40">
+  <div class="container mx-auto relative">
+
+    <!-- Swiper -->
+<div class="swiper mySwiper h-[650px] rounded-3xl overflow-hidden shadow-2xl">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div
+          class="swiper-slide bg-[url('https://phuler.myshopify.com/cdn/shop/files/slider-1.jpg?v=1613740081')] bg-cover bg-center">
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="swiper-slide bg-[url('https://phuler.myshopify.com/cdn/shop/files/slider-2.jpg?v=1613740081')] bg-cover bg-center">
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Category Cards -->
+    <div class="absolute left-1/2 -translate-x-1/2 -bottom-24 w-full max-w-6xl px-6 z-20">
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="relative overflow-hidden">
+          <img
+            src="https://phuler.myshopify.com/cdn/shop/files/banner-1.png?v=1613740081"
+            alt="Camellias"
+            class="w-full">
+
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+            <h2 class="uppercase text-2xl font-semibold">Camellias</h2>
+            <a href="#" class="underline mt-2">
+              Shop Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative overflow-hidden">
+          <img
+            src="https://phuler.myshopify.com/cdn/shop/files/banner-2.png?v=1613740081"
+            alt="Bergamot"
+            class="w-full">
+
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+            <h2 class="uppercase text-2xl font-semibold">Bergamot</h2>
+            <a href="#" class="underline mt-2">
+              Shop Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative overflow-hidden">
+          <img
+            src="https://phuler.myshopify.com/cdn/shop/files/banner-3.png?v=1613740081"
+            alt="Bottlebrush"
+            class="w-full">
+
+          <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+            <h2 class="uppercase text-2xl font-semibold">Bottlebrush</h2>
+            <a href="#" class="underline mt-2">
+              Shop Now
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Featured product starts -->
+ <section>
+    <div class="container">
+        <!-- heading -->
+             <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-5 w-full">
+          <h2 class="text-4xl font-bold whitespace-nowrap">
+          Featured Products
+        </h2>
+    </div>
+
+    <!-- Arrows and categories -->
+      <div class="flex items-center gap-8 ml-10">
+        <button class="text-red-500 font-medium">Winter</button>
+        <button class="hover:text-red-500 transition">Various</button>
+        <button class="hover:text-red-500 transition">Greens</button>
+
+
+         <div class="flex gap-2">
+          <button
+            class="w-12 h-12 bg-gray-100 hover:bg-black hover:text-white transition flex items-center justify-center">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+
+            <button
+            class="w-12 h-12 bg-gray-100 hover:bg-black hover:text-white transition flex items-center justify-center">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+          </div>
+          </div>
+          </div>
+
+          <!-- product -->
+           <div class="lg:grid-cols-4">
+            <!-- product 1 -->
+          <div class="flex gap-6">
+  <!-- Product 1 -->
+  <div class="w-1/4">
+  <!-- Image Wrapper -->
+  <div class="relative group overflow-hidden">
+
+    <img
+      src="https://phuler.myshopify.com/cdn/shop/products/6_21dd31a0-0b8e-4f0b-a9f9-b497b4961887_grande.jpg?v=1533545135"
+      alt=""
+      class="w-full"
+    >
+
+    <!-- Icons -->
+    <div
+      class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2
+      opacity-0 group-hover:opacity-100
+      translate-y-3 group-hover:translate-y-0
+      transition-all duration-300"
+    >
+      <i class="bi bi-heart bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition"></i>
+      <i class="bi bi-bag bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition"></i>
+      <i class="bi bi-search-heart bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition"></i>
+      <i class="bi bi-arrows-angle-contract bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition"></i>
+    </div>
+
+  </div>
+
+  <!-- Product Text -->
+  <div class="text-center mt-4">
+    <h3 class="font-semibold transition-colors duration-300 hover:text-red-500">
+      Evergreen Candytuft
+    </h3>
+    <p>$40.00</p>
+  </div>
+</div>
+             <!-- product 2 -->
+         <div class="w-1/4">
+    <div class="relative group">
+                <img src="https://phuler.myshopify.com/cdn/shop/products/5_e83a8771-fcbf-4180-aab3-b198e0828839_grande.jpg?v=1533545131" alt="">
+  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2
+            opacity-0 group-hover:opacity-100
+            translate-y-3 group-hover:translate-y-0
+            transition-all duration-300">
+        <i class="bi bi-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-bag bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-search-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-arrows-angle-contract bg-white p-2 rounded-full shadow"></i>
+      </div>
+    </div>
+                <div class="text-center mt-4">
+                    <h3 class="font-semibold transition-color duration-300 hover:text-red-500">Flower Boutique Pink</h3>
+                    <p>$100.00</p>
+                </div>
+             </div>
+             <!-- product 3 -->
+            <div class="w-1/4">
+    <div class="relative group">
+                <img src="https://phuler.myshopify.com/cdn/shop/products/7_a55fa9d0-e913-4819-a018-d31d7e003af7_grande.jpg?v=1533545141" alt="">
+
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2
+            opacity-0 group-hover:opacity-100
+            translate-y-3 group-hover:translate-y-0
+            transition-all duration-300">
+        <i class="bi bi-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-bag bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-search-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-arrows-angle-contract bg-white p-2 rounded-full shadow"></i>
+      </div>
+    </div>
+
+                <div class="text-center mt-4">
+                    <h3 class="font-semibold transition-color duration-300 hover:text-red-500">Pearl Everlasting</h3>
+                    <p>$100.00</p>
+                </div>
+             </div>
+             <!-- product 4 -->
+             <div class="w-1/4">
+    <div class="relative group">
+                <img src="https://phuler.myshopify.com/cdn/shop/products/3_5ed686d0-c62e-42fb-bc03-777601923eb7_grande.jpg?v=1533544611" alt="">
+
+                
+                  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2
+            opacity-0 group-hover:opacity-100
+            translate-y-3 group-hover:translate-y-0
+            transition-all duration-300">
+        <i class="bi bi-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-bag bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-search-heart bg-white p-2 rounded-full shadow"></i>
+        <i class="bi bi-arrows-angle-contract bg-white p-2 rounded-full shadow"></i>
+      </div>
+    </div>
+                <div class="text-center mt-4">
+                    <h3 class="font-semibold transition-color duration-300 hover:text-red-500">Flower Boutique Pink</h3>
+                    <p>$150.00</p>
+                </div>
+             </div>
+
+           </div>
+           
+
+ </section>
+<!-- Featured product ends --> 
+
+<!-- Banner section starts -->
+<section class="bg-[#f8f8f8] py-16">
+  <div class="container mx-auto px-6 lg:px-16">
+
+    <div class="grid lg:grid-cols-2 items-center gap-10">
+
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-5xl lg:text-7xl font-serif leading-tight">
+          Send
+          <span class="text-red-500">flowers</span>
+          like <br>
+          you mean it.
+        </h1>
+
+        <p class="text-gray-500 text-xl leading-10 mt-8 max-w-xl">
+          Where flowers are our inspiration to create lasting memories.
+          Whatever the occasion, our flowers will make it special
+          cursus a sit amet mauris.
+        </p>
+
+        <!-- Signature -->
+        <img
+          src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/h2-sign-img.png"
+          alt="Signature"
+          class="mt-10 w-48"
+        >
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center">
+        <img
+          src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
+          alt="Flower Bouquet"
+          class="w-full max-w-2xl"
+        >
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Banner section ends -->
+
+<!-- Flower Section Starts -->
+<section class="py-10 px-8">
+  <h1 class="text-3xl font-bold text-center mb-8">
+    All Flowers
+  </h1>
+
+  <div class="grid grid-cols-4 gap-6 ">
+    
+
+    <!-- flower 1 -->
+     <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg"
+        alt="Majesty Palm"
+          class="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Majesty Palm</h3>
+      
+      <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    
+  </div>
+
+    <!-- flower 2 -->
+    <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+        alt="Foxglove Flower"
+        class="w-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Foxglove Flower</h3>
+     <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+    <!-- flower 3 -->
+   <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg"
+        alt="Sweet Alyssum"
+        class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110 "
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Sweet Alyssum</h3>
+    <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+    <!-- flower 4 -->
+    <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg"
+        alt="Spring Snowflake"
+        class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110"
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Spring Snowflake</h3>
+     <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+    <!-- flower 5 -->
+    <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg"
+        alt="Scarlet Sage"
+        class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110"
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Scarlet Sage</h3>
+     <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+    <!-- flower 6 -->
+   <div class="group">
+    <div class="overflow-hidden">
+    <img
+  src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg"
+  alt="Rock Soapwort"
+  class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110"
+
+      >
+      </div>
+
+      <h3 class="font-semibold uppercase">Rock Soapwort</h3>
+      <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+    <!-- flower 7 -->
+   <div class="group">
+    <div class="overflow-hidden">
+  <img
+    src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg"
+    alt="Wild Roses"
+    class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110"
+  >
+  </div>
+  <h3 class="font-semibold uppercase">Wild Roses</h3>
+  <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+</div>
+
+    <!-- flower 8 -->
+    <div class="group">
+    <div class="overflow-hidden">
+      <img
+        src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg"
+        alt="Summer Savory"
+        class="w-full  transition-transform duration-500 ease-in-out group-hover:scale-110"
+      >
+      </div>
+      <h3 class="font-semibold uppercase">Wild Roses</h3>
+      <div class="relative h-6 mt-1 overflow-hidden">
+  <p class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+    $259
+  </p>
+
+  <p class="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-red-500 uppercase cursor-pointer">
+    Add to Cart
+  </p>
+</div>
+    </div>
+
+  </div>
+</section>
+<!-- Flower Section Ends -->
+
+<!-- footer section starts -->
+<!-- Footer -->
+<footer class="bg-gray-100 py-20">
+  <div class="container mx-auto px-6">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- About -->
+      <div>
+        <h2 class="text-4xl font-bold mb-8">About Us</h2>
+
+        <p class="text-gray-700 leading-9 mb-8">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          sed do eiusmod tempor incididunt
+        </p>
+
+        <div class="text-gray-800 leading-9 mb-8">
+          <p>Address: 123 Main Street, Anytown, CA 12345 - USA.</p>
+          <p>Telephone: 123 456 789</p>
+          <p>Email: info@example.com</p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex gap-6 text-2xl">
+          <i class="fa-brands fa-facebook-f hover:text-red-500 cursor-pointer"></i>
+          <i class="fa-brands fa-twitter hover:text-red-500 cursor-pointer"></i>
+          <i class="fa-brands fa-instagram hover:text-red-500 cursor-pointer"></i>
+          <i class="fa-brands fa-google-plus-g hover:text-red-500 cursor-pointer"></i>
+          <i class="fa-solid fa-rss hover:text-red-500 cursor-pointer"></i>
+          <i class="fa-solid fa-globe hover:text-red-500 cursor-pointer"></i>
+        </div>
+      </div>
+
+      <!-- Information -->
+      <div>
+        <h2 class="text-4xl font-bold mb-8">Information</h2>
+
+        <ul class="space-y-6 text-gray-800">
+          <li><a href="#" class="hover:text-red-500">About Us</a></li>
+          <li><a href="#" class="hover:text-red-500">Delivery Information</a></li>
+          <li><a href="#" class="hover:text-red-500">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-red-500">Terms & Conditions</a></li>
+          <li><a href="#" class="hover:text-red-500">Customer Service</a></li>
+          <li><a href="#" class="hover:text-red-500">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- My Account -->
+      <div>
+        <h2 class="text-4xl font-bold mb-8">My Account</h2>
+
+        <ul class="space-y-6 text-gray-800">
+          <li><a href="#" class="hover:text-red-500">My Account</a></li>
+          <li><a href="#" class="hover:text-red-500">Order History</a></li>
+          <li><a href="#" class="hover:text-red-500">WishList</a></li>
+          <li><a href="#" class="hover:text-red-500">Newsletter</a></li>
+          <li><a href="#" class="hover:text-red-500">Size Chart</a></li>
+          <li><a href="#" class="hover:text-red-500">International Orders</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h2 class="text-4xl font-bold mb-8">
+          Join Our Newsletter Now
+        </h2>
+
+        <p class="text-gray-700 leading-9 mb-8">
+          Get E-mail updates about our latest shop and special offers.
+        </p>
+
+        <input
+          type="email"
+          placeholder="email@example.com"
+          class="w-full border-b border-gray-400 bg-transparent outline-none py-3 mb-10"
+        >
+
+        <button
+          class="bg-red-500 hover:bg-red-600 text-white font-semibold uppercase px-12 py-4 transition duration-300">
+          Subscribe
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+ <!-- footer section ends -->
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+  </body>
+</html>
