@@ -6,7 +6,9 @@ export default function MainLayout({ children }) {
     <>
       <Header />
 
-      <main>{children}</main>
+      <main className="min-h-screen bg-white p-10">
+        {children}
+      </main>
 
       <Footer />
     </>

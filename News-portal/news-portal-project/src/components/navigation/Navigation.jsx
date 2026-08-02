@@ -37,65 +37,30 @@ export default function Navigation({ className = "" }) {
 
                 {/* Category Button */}
                 <button
-                  className="
-                    flex 
-                    items-center 
-                    gap-1 
-                    font-semibold 
-                    text-white 
-                    transition-colors 
-                    duration-300 
-                    hover:text-red-600
-                  "
+                  className="flex items-center gap-1 font-semibold text-white transition-colors duration-300 hover:text-red-600"
                 >
                   Categories
 
                   <FiChevronDown
-                    className={`
-                      transition-transform 
-                      duration-300
-                      ${isOpen ? "rotate-180" : ""}
-                    `}
+                    className={`transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
                   />
-
                 </button>
 
 
-                {/* Dropdown Bridge */}
+                {/* Dropdown */}
                 {isOpen && (
                   <div className="absolute left-0 top-full pt-2">
 
-                    {/* Dropdown Menu */}
-                    <div
-                      className="
-                        w-60
-                        overflow-hidden
-                        rounded-xl
-                        border
-                        border-gray-200
-                        bg-white
-                        shadow-2xl
-                      "
-                    >
+                    <div className="w-60 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-2xl">
 
                       {categories.map((category) => (
 
                         <Link
                           key={category}
                           href={`/category/${category.toLowerCase()}`}
-                          className="
-                            block
-                            border-l-4
-                            border-transparent
-                            px-5
-                            py-3
-                            text-gray-700
-                            transition-all
-                            duration-300
-                            hover:border-red-600
-                            hover:bg-red-50
-                            hover:text-red-600
-                          "
+                          className="block border-l-4 border-transparent px-5 py-3 text-gray-700 transition-all duration-300 hover:border-red-600 hover:bg-red-50 hover:text-red-600"
                         >
                           {category}
                         </Link>
@@ -117,16 +82,11 @@ export default function Navigation({ className = "" }) {
 
               <Link
                 href={item.href}
-                className={`
-                  font-semibold
-                  transition-colors
-                  duration-300
-                  ${
-                    pathname === item.href
-                      ? "text-red-600"
-                      : "text-white hover:text-red-600"
-                  }
-                `}
+                className={`font-semibold transition-colors duration-300 ${
+                  pathname === item.href
+                    ? "text-red-600"
+                    : "text-white hover:text-red-600"
+                }`}
               >
                 {item.label}
               </Link>
