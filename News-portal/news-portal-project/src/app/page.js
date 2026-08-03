@@ -17,14 +17,36 @@ export default function Home() {
       <BreakingNews />
       <LatestNews />
       <TrendingNews />
-      <CategoryNews title="Politics" news={politicsNews} />
-      <CategoryNews title="Technology" news={technologyNews} />
 
-      <CategoryNews title="Sports" news={sportsNews} />
+   <CategoryNews
+  title="Politics"
+  news={politicsNews}
+  href="/category/politics"
+/>
 
-      <CategoryNews title="Business" news={businessNews} />
-      <CategoryNews title="Health" news={healthNews} />
+<CategoryNews
+  title="Technology"
+  news={technologyNews}
+  href="/category/technology"
+/>
+
+<CategoryNews
+  title="Sports"
+  news={sportsNews}
+  href="/category/sports"
+/>
+
+<CategoryNews
+  title="Business"
+  news={businessNews}
+  href="/category/business"
+/>
+
+<CategoryNews
+  title="Health"
+  news={healthNews}
+  href="/category/health"
+/>
     </>
-    
   );
 }

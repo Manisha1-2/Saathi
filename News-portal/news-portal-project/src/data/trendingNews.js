@@ -5,7 +5,7 @@ const trendingNews = [
     title: "नेपालमा आर्टिफिसियल इन्टेलिजेन्स प्रविधिको प्रयोग बढ्दै",
     description:
       "विभिन्न क्षेत्रमा AI प्रविधिको प्रयोग र डिजिटल सेवाको विस्तार तीव्र हुँदै गएको छ।",
-    image: "/images/trending/trending-1.jpg",
+    image: "/images/trending/trend-1.jpg",
   },
 
   {

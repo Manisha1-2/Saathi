@@ -4,7 +4,7 @@ export default function LatestNewsCard({ news }) {
   return (
     <Link
       href={`/article/${news.id}`}
-      className="group block overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+      className="group flex h-full flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
     >
       {/* Image */}
       <div className="relative h-56 overflow-hidden">
@@ -21,29 +21,31 @@ export default function LatestNewsCard({ news }) {
       </div>
 
       {/* Content */}
-      <div className="p-5">
+      <div className="flex flex-1 flex-col p-5">
 
         {/* Date & Author */}
-        <div className="mb-3 flex items-center gap-2 text-sm text-gray-500">
+        <div className="mb-3 flex items-center gap-2 text-sm text-gray-400">
           <span>{news.date}</span>
           <span>•</span>
           <span>{news.author}</span>
         </div>
 
         {/* Title */}
-        <h3 className="mb-3 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-red-600">
+        <h3 className="mb-3 text-xl font-bold text-white transition-colors duration-300 group-hover:text-red-500">
           {news.title}
         </h3>
 
         {/* Description */}
-        <p className="mb-5 text-sm leading-6 text-gray-600">
+        <p className="mb-5 text-sm leading-6 text-gray-300">
           {news.description}
         </p>
 
-        {/* Button Style */}
+        {/* Button */}
         <span
           className="
+            mt-auto
             inline-block
+            w-fit
             rounded-lg
             border
             border-red-600
@@ -51,7 +53,7 @@ export default function LatestNewsCard({ news }) {
             py-2
             text-sm
             font-semibold
-            text-red-600
+            text-red-500
             transition-all
             duration-300
             group-hover:bg-red-600

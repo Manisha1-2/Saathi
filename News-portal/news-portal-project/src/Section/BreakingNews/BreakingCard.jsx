@@ -5,7 +5,7 @@ export default function BreakingCard({ news }) {
   return (
     <Link
       href={`/article/${news.id}`}
-      className="group block overflow-hidden rounded-2xl bg-white shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
 
       {/* Image */}
@@ -23,7 +23,7 @@ export default function BreakingCard({ news }) {
 
 
       {/* Content */}
-      <div className="p-6">
+      <div className="flex flex-1 flex-col p-6">
 
 
         {/* Category + Time */}
@@ -34,7 +34,7 @@ export default function BreakingCard({ news }) {
           </span>
 
 
-          <span className="text-gray-500">
+          <span className="text-gray-400">
             {news.time}
           </span>
 
@@ -43,29 +43,29 @@ export default function BreakingCard({ news }) {
 
 
         {/* Title */}
-        <h3 className="text-xl font-bold leading-snug text-gray-900 transition group-hover:text-red-600">
+        <h3 className="text-xl font-bold leading-snug text-white transition group-hover:text-red-500">
           {news.title}
         </h3>
 
 
 
         {/* Description */}
-        <p className="mt-3 line-clamp-3 text-gray-600">
+        <p className="mt-3 line-clamp-3 text-gray-300">
           {news.description}
         </p>
 
 
 
         {/* Bottom */}
-        <div className="mt-5 flex items-center justify-between">
+        <div className="mt-auto flex items-center justify-between pt-5">
 
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-400">
             By NewsPulse Team
           </span>
 
 
           {/* Button Style */}
-          <span className="font-semibold text-red-600 group-hover:underline">
+          <span className="font-semibold text-red-500 transition group-hover:underline">
             Read More →
           </span>
 
