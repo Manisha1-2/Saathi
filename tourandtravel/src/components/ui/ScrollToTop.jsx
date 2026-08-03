@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowUp } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa';
+
 
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
@@ -18,16 +18,7 @@ export default function ScrollToTop() {
 
   return (
     <>
-      {/* WhatsApp Float */}
-      <a
-        href="https://wa.me/9771444444"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contact us on WhatsApp"
-        className="whatsapp-float"
-      >
-        <FaWhatsapp className="text-white text-2xl" />
-      </a>
+    
 
       {/* Scroll to top */}
       <AnimatePresence>

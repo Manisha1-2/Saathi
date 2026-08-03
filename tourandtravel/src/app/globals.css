@@ -603,13 +603,18 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   color: white !important;
-  z-index: 9999 !important;
+  z-index: 100 !important;
 }
 
 .swiper-button-next {
-  right: 30px !important;
+  right: 40px !important;
 }
 
 .swiper-button-prev {
-  left: 30px !important;
+  left: 40px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 35px !important;
 }
