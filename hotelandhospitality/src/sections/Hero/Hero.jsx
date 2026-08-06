@@ -39,7 +39,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-4 leading-tight"
         >
-          Saathi Grand
+          The Grand
         </motion.h1>
 
         <motion.p
@@ -72,11 +72,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="!mt-12 flex flex-col sm:flex-row items-center justify-center gap-6"
         >
+
           <Link
             href="/booking"
-            className="px-8 py-4 bg-gold-500 text-navy-900 font-semibold tracking-wider text-sm uppercase
+            className="!px-9 !py-5 bg-gold-500 text-navy-900 font-semibold tracking-wider text-sm uppercase
                        hover:bg-gold-400 transition-all duration-300 rounded-sm shadow-lg shadow-gold-500/20
                        hover:shadow-xl hover:shadow-gold-500/30"
           >
@@ -84,7 +85,7 @@ const Hero = () => {
           </Link>
           <Link
             href="/rooms"
-            className="px-8 py-4 border-2 border-white/40 text-white font-medium tracking-wider text-sm uppercase
+            className="!px-9 !py-5 border-2 border-white/40 text-white font-medium tracking-wider text-sm uppercase
                        hover:bg-white hover:text-navy-900 transition-all duration-300 rounded-sm"
           >
             Explore Rooms

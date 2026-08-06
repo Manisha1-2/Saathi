@@ -43,16 +43,16 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2 group">
           <div className="flex flex-col leading-none">
             <span className="font-[family-name:var(--font-heading)] text-xl md:text-2xl font-bold text-white tracking-wide">
-              SAATHI
+              THE
             </span>
             <span className="text-gold-500 text-[10px] md:text-xs tracking-[0.3em] font-[family-name:var(--font-accent)]">
-              GRAND HOTEL
+              GRAND HOTEL & RESORT
             </span>
           </div>
         </Link>
 
         {/* Desktop navigation */}
-        <div className="hidden lg:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-8">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.path;
             return (
@@ -79,7 +79,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-4">
           <Link
             href="/booking"
-            className="px-6 py-2.5 bg-gold-500 text-navy-900 text-sm font-semibold tracking-wide
+            className="!px-6 !py-3 bg-gold-500 text-navy-900 text-sm font-semibold tracking-wide
                        hover:bg-gold-400 transition-all duration-300 rounded-sm"
           >
             Book Now
