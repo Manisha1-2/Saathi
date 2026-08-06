@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+/* ========================================
+   SAATHI GRAND HOTEL — GLOBAL STYLES
+   ======================================== */
+
+@theme {
+  --color-navy-50: #E8EDF5;
+  --color-navy-100: #C5D0E6;
+  --color-navy-200: #9EB3D5;
+  --color-navy-300: #7796C3;
+  --color-navy-400: #5A80B6;
+  --color-navy-500: #3D6AA9;
+  --color-navy-600: #2C5490;
+  --color-navy-700: #1E3F70;
+  --color-navy-800: #122C52;
+  --color-navy-900: #0B1D3A;
+  --color-navy-950: #06101F;
+
+  --color-gold-50: #FBF6EC;
+  --color-gold-100: #F5EACF;
+  --color-gold-200: #EDDAAA;
+  --color-gold-300: #E3C87F;
+  --color-gold-400: #D4B261;
+  --color-gold-500: #C8A45D;
+  --color-gold-600: #B8913D;
+  --color-gold-700: #9A7630;
+  --color-gold-800: #7B5D25;
+  --color-gold-900: #5C451C;
+  --color-gold-950: #3D2E12;
+
+  --color-cream-50: #FEFCF9;
+  --color-cream-100: #FDF9F2;
+  --color-cream-200: #FAF6F0;
+  --color-cream-300: #F5EDE0;
+  --color-cream-400: #EDE1CC;
+  --color-cream-500: #E2D3B5;
+  --color-cream-600: #D4C19A;
+
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+  --font-accent: Georgia, serif;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #1A1A1A;
+  background-color: #FEFCF9;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EDE0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8A45D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8913D;
+}
+
+/* ========================================
+   SELECTION STYLING
+   ======================================== */
+
+::selection {
+  background-color: rgba(200, 164, 93, 0.3);
+  color: #0B1D3A;
+}
+
+/* ========================================
+   CUSTOM UTILITIES
+   ======================================== */
+
+/* ========================================
+   CUSTOM UTILITIES
+   ======================================== */
+
+.container-hotel {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+
+.text-gradient-gold {
+  background: linear-gradient(135deg,
+      #C8A45D,
+      #E3C87F,
+      #C8A45D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+
+.glass-dark {
+  background: rgba(11, 29, 58, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 164, 93, 0.15);
+}
+
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 164, 93, 0.2);
+}
+
+
+.gold-underline {
+  position: relative;
+}
+
+
+.gold-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent,
+      #C8A45D,
+      transparent);
+}
+
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+  background-size: 200% 100%;
+}
+
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
